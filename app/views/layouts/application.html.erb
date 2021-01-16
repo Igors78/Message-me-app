@@ -9,26 +9,28 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-
     <div class="ui small inverted menu">
         <div class="ui container">
-            <a class="active item">
+            <a class="item">
                 Home
             </a>
             <a class="item">
                 Messages
             </a>
             <div class="right menu">
-                <div class="ui dropdown item">
-                    Language <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a class="item">English</a>
-                        <a class="item">Russian</a>
-                        <a class="item">Spanish</a>
-                    </div>
+                <div class="ui item dropdown">
+                    <button class="ui inverted button dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
                 <div class="item">
                     <div class="ui primary button">Sign Up</div>
