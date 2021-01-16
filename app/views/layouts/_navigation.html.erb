@@ -12,10 +12,10 @@
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Log out</a></li>
             <li><a class="dropdown-item" href="#">Log in</a></li>
-            <li><a class="dropdown-item" href="#">Sign up</a></li>
+            <li><%= link_to "Sign up", signup_path, class: "dropdown-item" %></li>
         </ul>
     </div>
     <div class="item">
-        <div class="ui primary button">Sign Up</div>
+        <div class="ui primary button"><%= link_to "Sign up", signup_path %></div>
     </div>
 </div>
