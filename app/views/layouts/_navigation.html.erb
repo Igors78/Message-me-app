@@ -10,8 +10,9 @@
             Account
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Log out</a></li>
-            <li><a class="dropdown-item" href="#">Log in</a></li>
+            <li><%= link_to "Log out", logout_path, class: "dropdown-item",
+                    method: :delete %></li>
+            <li><a href="/login" class="dropdown-item" href="#">Log in</a></li>
             <li><%= link_to "Sign up", signup_path, class: "dropdown-item" %></li>
         </ul>
     </div>
