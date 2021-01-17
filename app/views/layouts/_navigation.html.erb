@@ -20,6 +20,10 @@
         </ul>
     </div>
     <div class="item">
-        <div class="ui button"><%= link_to "Sign up", signup_path %></div>
+        <% if logged_in? %>
+        <%= current_user.name %>
+        <% else %>
+        <div class="ui button"><%= link_to "Log in", login_path %></div>
+        <% end %>
     </div>
 </div>
