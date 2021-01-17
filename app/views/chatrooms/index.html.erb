@@ -10,17 +10,7 @@
             <div class="content">
                 <div class="ui small feed">
                     <h4 class="ui header">Activity</h4>
-                    <% if @messages.any? %>
-                    <% @messages.each do |message| %>
-                    <div class="event">
-                        <div class="content">
-                            <div class="summary">
-                                <em><%= message.user.name %>:</em> <%= message.body %>
-                            </div>
-                        </div>
-                    </div>
-                    <% end %>
-                    <% end %>
+                    <%= render @messages %>
                 </div>
             </div>
             <div class="extra content">
