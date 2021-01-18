@@ -33,3 +33,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });
+
+// $(document).on("turbolinks:load", scroll_bottom());
+
+//scroll_bottom = function () {
+//  $("#messages-content").scrollTop($("#messages-content")[0].scrollHeight);
+//};
