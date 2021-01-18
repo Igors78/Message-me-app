@@ -8,13 +8,13 @@
     <div class="ten wide column">
         <div class="ui fluid raised card chatbox">
             <div class="content">
-                <div class="ui small feed">
-                    <h4 class="ui header">Activity</h4>
+                <div class="ui feed" id='messages'>
+
                     <%= render @messages %>
                 </div>
             </div>
             <div class="extra content">
-                <%= form_with(model: @message, local: true, url: message_path) do |form| %>
+                <%= form_with(model: @message, local: true, url: message_path, remote: true) do |form| %>
 
                 <div class="field">
                     <div class="ui fluid icon input">

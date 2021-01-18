@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   post 'message', to: 'messages#create'
   resources :users
+
+  mount ActionCable.server, at: '/cable'
 end

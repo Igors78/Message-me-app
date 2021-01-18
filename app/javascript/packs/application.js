@@ -14,7 +14,7 @@ ActiveStorage.start();
 // Loads all Semantic javascripts
 //= require jquery
 //= require semantic-ui
-
+require("jquery");
 import * as bootstrap from "bootstrap";
 import "../stylesheets/application";
 
