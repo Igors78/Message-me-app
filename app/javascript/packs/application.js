@@ -38,7 +38,7 @@ $(document).on("turbolinks:load", function () {
   scroll_bottom();
 });
 
-scroll_bottom = function () {
+function scroll_bottom() {
   $("#messages-content")
     .stop()
     .animate(
@@ -47,4 +47,4 @@ scroll_bottom = function () {
       },
       800
     );
-};
+}
