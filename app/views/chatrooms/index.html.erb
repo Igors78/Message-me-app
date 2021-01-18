@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="extra content">
-                <%= form_with(model: @message, local: false, url: message_path, remote: true) do |form| %>
+                <%= form_with(model: @message, url: message_path, local: false) do |form| %>
 
                 <div class="field">
                     <div class="ui fluid icon input">

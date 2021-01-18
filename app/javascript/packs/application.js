@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 $(document).on("turbolinks:load", function () {
   scroll_bottom();
+  submit_message();
 });
 
 function scroll_bottom() {
@@ -48,3 +49,15 @@ function scroll_bottom() {
       800
     );
 }
+
+function submit_message() {
+  $("#message_body").on("keydown", function (e) {
+    if (e.key == Enter) {
+      $("button").trigger("click");
+    }
+  });
+}
+
+$(document).on("ajax:beforeSend", function () {
+  $("#message_body").val("");
+});
