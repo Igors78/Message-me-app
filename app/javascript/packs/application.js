@@ -14,7 +14,7 @@ ActiveStorage.start();
 // Loads all Semantic javascripts
 //= require jquery
 //= require semantic-ui
-
+require("jquery");
 import * as bootstrap from "bootstrap";
 import "../stylesheets/application";
 
@@ -32,4 +32,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
+});
+
+$(document).on("turbolinks:load", function () {
+  scroll_bottom();
+  submit_message();
+});
+
+function scroll_bottom() {
+  $("#messages-content")
+    .stop()
+    .animate(
+      {
+        scrollTop: $("#messages-content")[0].scrollHeight,
+      },
+      800
+    );
+}
+
+function submit_message() {
+  $("#message_body").on("keydown", function (e) {
+    if (e.key == Enter) {
+      $("button").trigger("click");
+    }
+  });
+}
+
+$(document).on("ajax:beforeSend", function () {
+  $("#message_body").val("");
 });

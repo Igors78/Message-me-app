@@ -20,9 +20,7 @@
         </div>
     </div>
     <div class="ui container">
-        <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-        <% end %>
+        <%= render 'layouts/error_messages' %>
         <%= yield %>
     </div>
 </body>
