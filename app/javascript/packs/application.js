@@ -34,8 +34,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 });
 
-// $(document).on("turbolinks:load", scroll_bottom());
+$(document).on("turbolinks:load", function () {
+  scroll_bottom();
+});
 
-//scroll_bottom = function () {
-//  $("#messages-content").scrollTop($("#messages-content")[0].scrollHeight);
-//};
+scroll_bottom = function () {
+  $("#messages-content")
+    .stop()
+    .animate(
+      {
+        scrollTop: $("#messages-content")[0].scrollHeight,
+      },
+      800
+    );
+};
