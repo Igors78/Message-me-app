@@ -4,16 +4,9 @@
 
 ### Objectives
 
-- Construct a bi-directional has many through.
-- Query for associations via the belongs_to, has_many, and has_many through
-  associations.
-- Iterate over associations in a view and display associated data for a primary
-  instance.
-- Identify the join model in a has many through.
+- Construct a bi-directional action cable channel for live chat messaging between users
 
 ![screenshot](screenshot.png)
-
-![screenshot](screenshot1.png)
 
 ### Project created for learning purposes, covering the basics of Ruby on Rails including, but not limited to
 
@@ -26,14 +19,13 @@
 - Adding gems for extra features
 - Authentication
 - Multiple level data models associations and relationships
+- Action cable usage
 
 ## Getting Started
 
-- This app is functional event organizer. Users can create events and invite
-  other users or dismiss existing invites they made. Each user sees relevant
-  events on his/her profile and can accept or decline invites from others
+- This app is functional messaging chat. Every logged in user can post messages in the chat and all users logged in see this message live on their screen in real time.
 
-  [Live Demo Link](https://private-events-application.herokuapp.com/)
+  [Live Demo Link]()
 
 ## On your Computer
 
@@ -51,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 ## Install
 
 - Go to your preferred directory
-- Run `git clone https://github.com/Igors78/Post-Blog-Service.git` command
+- Run `git clone https://github.com/Igors78/Message-me-app.git` command
 - Install Rails with all dependencies in order to run local server and app in
   it:
 - `install Rails`
