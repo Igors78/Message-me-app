@@ -25,7 +25,7 @@
 
 - This app is functional messaging chat. Every logged in user can post messages in the chat and all users logged in see this message live on their screen in real time.
 
-  [Live Demo Link]()
+  [Live Demo Link](https://message-me-action-cable.herokuapp.com/)
 
 ## On your Computer
 
